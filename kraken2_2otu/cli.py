@@ -12,6 +12,7 @@ if __name__ == '__main__':
     do_it_all()
 
 #  activating libraries and ete3 NCBITaxa
+import click
 import pandas as pd
 import numpy as np
 import os
