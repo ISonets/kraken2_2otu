@@ -26,7 +26,7 @@ TAXID_COL_IDX = 4
 desired_ranks = ['root', 'domain', 'kingdom', 'phylum', 'class', 'order', 'family', 'genus', 'species', 'strain']
 #  one-time download, later just updates silently
 ncbi = NCBITaxa()
-# ncbi.update_taxonomy_database()
+ncbi.update_taxonomy_database()
 
 
 def check_and_create_directory(directory):
