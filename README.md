@@ -2,14 +2,17 @@
 This script allows creating OTU and NCBI taxa lineage tables from Kraken2 reports stored in 1 folder. Simple but effective.
 
 ## Prerequisites
-Use setup.py to install all dependencies automatically (you may also need ```pip``` and ```click```).  
-In case something goes wrong, you need to install:
-1) pandas;
-2) numpy;
-3) ete3.
+Use ```setup.py``` to install all dependencies automatically (you may also need to install ```pip```).
+
+### Installation
+1) Clone repository;
+2) Unzip and enter the folder;
+3) Do ```pip install -e ./ ``` .
+
+All dependencies should be installed automatically.
 
 ## Usage
-```kraken2_2otu --folder_path {path_to_folder_w_kraken2_reports} --outdir {path_to_results_folder} ```
+```kraken2_2otu --data_dir {path_to_folder_w_kraken2_reports} --outdir {path_to_results_folder} ```
 
 ## How it works
 Using Kraken2 report file which stores info about read count and taxid (columns 3 and 5 respectively) of each taxon it could found, we can transform it to OTU table suitable for later usage with ```phyloseq``` R package for downstream analysis.  
